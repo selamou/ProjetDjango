@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Boards</h1>
+    <!-- {% for boards in board%}
+    {{boards.name}} <br>
+
+    {%endfor%} -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th> board</th>
+                <th>sujet</th>
+                <th>id</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for boards in board%}
+                <tr> 
+                    <td> {{boards.name}}</td>
+                    <td> {{boards.description}}</td>
+                    <td> {{boards.id}}</td>
+
+                </tr>
+            {%endfor%}
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
